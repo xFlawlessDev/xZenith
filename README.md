@@ -67,6 +67,27 @@
   
   <img src="./screenshots/Tools.png" alt="Tools" width="90%"/>
   <p><em>System Tools - Utilities and optimization tools</em></p>
+  
+  <img src="./screenshots/Settings.png" alt="Settings" width="90%"/>
+  <p><em>Settings - Customize your experience</em></p>
+  
+  <img src="./screenshots/AppInstaller.png" alt="App Installer" width="90%"/>
+  <p><em>App Installer - Install apps via Windows Package Manager</em></p>
+  
+  <img src="./screenshots/Backup.png" alt="Backup" width="90%"/>
+  <p><em>Backup - Driver backup and restore</em></p>
+  
+  <img src="./screenshots/Startup-App.png" alt="Startup Apps" width="90%"/>
+  <p><em>Startup Apps - Manage startup applications</em></p>
+  
+  <img src="./screenshots/xZenithBoost.png" alt="xZenith Boost" width="90%"/>
+  <p><em>xZenith Boost - System optimization tweaks</em></p>
+  
+  <img src="./screenshots/xZenithCast.png" alt="xZenith Cast" width="90%"/>
+  <p><em>xZenith Cast - Android device mirroring</em></p>
+  
+  <img src="./screenshots/About.png" alt="About" width="90%"/>
+  <p><em>About - Application information</em></p>
 </div>
 
 ---

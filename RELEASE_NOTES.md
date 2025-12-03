@@ -1,5 +1,13 @@
 # Release Notes
 
+## v0.2.0 (2025-12-03)
+
+### ✨ New Features
+
+- **Create Tweaks Profile** - Save and load custom tweaks configurations
+
+---
+
 ## v0.1.0-beta.1 (2025-12-02)
 
 ### 🎉 First Public Beta Release
