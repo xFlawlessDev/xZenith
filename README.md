@@ -59,7 +59,7 @@
 ## 🖼️ Screenshots
 
 <div align="center">
-  <img src="./screenshots/xZenith-photo-collage.png" alt="Dashboard" width="90%"/>
+  <img src="./screenshots/xZenith-photo-collage.jpg" alt="Collage" width="90%"/>
   <p><em>Dashboard - Real-time system overview</em></p>
   
   <img src="./screenshots/Monitoring-Top.png" alt="Monitoring" width="90%"/>
