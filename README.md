@@ -42,7 +42,7 @@
 <td width="50%">
 
 🛠️ **Powerful Tools**
-> System cleanup, driver backup, DNS changer, app installer
+> Process manager, system cleanup, driver backup, DNS changer, performance boost
 
 ⚡ **One-Click Tweaks**
 > Apply optimizations safely with rollback support
@@ -59,38 +59,14 @@
 ## 🖼️ Screenshots
 
 <div align="center">
-  <img src="./screenshots/xZenith-photo-collage.jpg" alt="xZenith Overview" width="90%"/>
-  <p><em>xZenith - Feature Overview</em></p>
-  
   <img src="./screenshots/Dashboard.png" alt="Dashboard" width="90%"/>
   <p><em>Dashboard - Real-time system overview</em></p>
   
   <img src="./screenshots/Monitoring.png" alt="Monitoring" width="90%"/>
   <p><em>Hardware Monitoring - Detailed temperature and usage graphs</em></p>
   
-  <img src="./screenshots/AppInstaller.png" alt="App Installer" width="90%"/>
-  <p><em>App Installer - Install apps via Windows Package Manager</em></p>
-
-  <img src="./screenshots/Startup-App.png" alt="Startup Apps" width="90%"/>
-  <p><em>Startup Apps - Manage startup applications</em></p>
-  
-  <img src="./screenshots/xZenithBoost.png" alt="xZenith Boost" width="90%"/>
-  <p><em>xZenith Boost - System optimization tweaks</em></p>
-  
-  <img src="./screenshots/xZenithCast.png" alt="xZenith Cast" width="90%"/>
-  <p><em>xZenith Cast - Android device mirroring</em></p>
-  
   <img src="./screenshots/Tools.png" alt="Tools" width="90%"/>
   <p><em>System Tools - Utilities and optimization tools</em></p>
-  
-  <img src="./screenshots/Settings.png" alt="Settings" width="90%"/>
-  <p><em>Settings - Customize your experience</em></p>
-  
-  <img src="./screenshots/Backup.png" alt="Backup" width="90%"/>
-  <p><em>Backup - Driver backup and restore</em></p>
-  
-  <img src="./screenshots/About.png" alt="About" width="90%"/>
-  <p><em>About - Application information</em></p>
 </div>
 
 ---
@@ -113,7 +89,9 @@
 | **App Installer** | Install applications via Windows Package Manager |
 | **System Utilities** | SFC, DISM, network reset, flush DNS, and more |
 | **System Diagnostics** | Sleep study, battery reports, memory diagnostics |
-| **Android Cast** | Mirror and control Android devices on PC |
+| **xZenith Cast** | Mirror and control Android devices on PC |
+| **xZenith Boost** | Performance optimization profiles for gaming and productivity |
+| **Process Manager** | Monitor and control running processes with app grouping |
 
 ### ⚡ System Tweaks
 - Performance optimizations (HAGS, Ultimate Performance Plan)
@@ -123,6 +101,7 @@
 - One-click apply/unapply with history tracking
 
 ### 🎮 Additional Features
+- **Global Search Command (Ctrl+K)** - Quick navigation to any feature without using mouse
 - **Discord Rich Presence** - Show monitoring status on Discord
 - **On-Screen Display (OSD)** - Notifications for system events
 - **8 Color Themes** - xZenith, Midnight, Ocean, Forest, Sunset, Aurora, Rose, Cyber
@@ -231,6 +210,19 @@ When reporting bugs, please include:
 
 ---
 
+## 🙏 Acknowledgments
+
+- [Tauri](https://tauri.app/) - Cross-platform framework
+- [Vue.js](https://vuejs.org/) - Reactive UI framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- [shadcn-vue](https://www.shadcn-vue.com/) - UI components
+- [xZenithHardwareMonitor](https://github.com/xFlawlessDev/xZenithHardwareMonitor) - Hardware monitoring library
+- [LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) - Core hardware monitoring
+- [scrcpy](https://github.com/Genymobile/scrcpy) - Android screen mirroring (xZenith Cast)
+- [Lucide](https://lucide.dev/) & [Iconify](https://iconify.design/) - Icons
+
+---
+
 ## 📝 License
 
 xZenith is proprietary software. All rights reserved.
@@ -244,6 +236,7 @@ Copyright © 2025 xFlawlessDev
   **Made with ❤️ by [xFlawlessDev](https://github.com/xFlawlessDev)**
   
   [![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/HKG9GNTesb)
+  [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/xflawlessdev)
   
   ⭐ **Star this repository to show your support!** ⭐
 
