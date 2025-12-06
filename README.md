@@ -84,11 +84,12 @@
 - **Real-time Dashboard** - System overview with CPU, GPU, RAM, Battery, and Storage stats
 - **Always-On Monitoring** - Automatic monitoring starts when opening the page
 - **Continuous CSV Logging** - Start/Stop logging toggle for real-time data recording
-- **Comprehensive Data Export** - CSV logs include 56+ hardware metrics:
+- **Comprehensive Data Export** - CSV logs include 75+ hardware metrics:
   - CPU: Temperature (main, package, avg, max), Power (package, avg, max, Intel breakdown), Voltage (core, SoC), Load, Frequency, Bus Speed
   - GPU: Temperature (core, hotspot, memory, junction), Power (current, max, PPT, SoC, core), Voltage (core, SoC, memory), Load, Clock, Memory usage, Fan metrics
   - Motherboard: Temperatures (system, VRM, CPU, PCH), Voltages (Vcore, +3.3V, +5V, +12V)
   - Network: Speed, Utilization, Total transferred data
+  - Storage: Temperature, Read/Write speeds, Total read/written data
 - **Enhanced CPU Data** - Intel power breakdown (cores, graphics, memory, platform), voltage tracking, bus speed
 - **Enhanced GPU Data** - Memory temperature, junction temperature, AMD power breakdown (PPT, SoC, Core)
 - **Multi-sensor support** - Intel, AMD, and NVIDIA hardware detection
