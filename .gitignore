@@ -1,0 +1,114 @@
+# Operating System Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Editor & IDE
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Logs & Databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.cache
+*.old
+
+# Build & Distribution
+dist/
+build/
+out/
+target/
+*.exe
+*.msi
+*.app
+*.dmg
+*.deb
+*.rpm
+*.AppImage
+
+# Dependencies
+node_modules/
+vendor/
+.pnp
+.pnp.js
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.yml
+config.local.*
+
+# Test Coverage
+coverage/
+*.coverage
+.nyc_output/
+.pytest_cache/
+
+# Package Manager Files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+Cargo.lock
+
+# Compressed Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Misc
+*.orig
+.idea_modules/
+atlassian-ide-plugin.xml

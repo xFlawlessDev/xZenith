@@ -1,0 +1,107 @@
+name: Discord Release Notification
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  notify-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract Release Information
+        id: release
+        run: |
+          echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          echo "release_name=${{ github.event.release.name }}" >> $GITHUB_OUTPUT
+          echo "release_url=${{ github.event.release.html_url }}" >> $GITHUB_OUTPUT
+
+      - name: Send Discord Notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          # Extract version from tag (remove 'v' prefix if present)
+          VERSION="${{ steps.release.outputs.tag }}"
+          VERSION="${VERSION#v}"
+
+          # Get release body and escape for JSON
+          RELEASE_BODY=$(cat <<'EOF'
+          ${{ github.event.release.body }}
+          EOF
+          )
+
+          # Truncate release body if too long (Discord embed description limit is 4096 chars)
+          if [ ${#RELEASE_BODY} -gt 3800 ]; then
+            RELEASE_BODY="${RELEASE_BODY:0:3800}...\n\n[Read full release notes](${{ steps.release.outputs.release_url }})"
+          fi
+
+          # Prepare JSON payload for Discord
+          cat > payload.json <<EOF
+          {
+            "username": "xZenith Releases",
+            "avatar_url": "https://raw.githubusercontent.com/xFlawlessDev/xZenith-Releases/main/assets/xZenith-effect.png",
+            "embeds": [{
+              "title": "🚀 xZenith $VERSION Released!",
+              "description": "A new version of xZenith is now available!",
+              "url": "${{ steps.release.outputs.release_url }}",
+              "color": 3447003,
+              "fields": [
+                {
+                  "name": "📦 Version",
+                  "value": "\`$VERSION\`",
+                  "inline": true
+                },
+                {
+                  "name": "📅 Released",
+                  "value": "<t:$(date +%s):R>",
+                  "inline": true
+                },
+                {
+                  "name": "📝 Release Notes",
+                  "value": $(echo "$RELEASE_BODY" | jq -Rs .),
+                  "inline": false
+                }
+              ],
+              "thumbnail": {
+                "url": "https://raw.githubusercontent.com/xFlawlessDev/xZenith-Releases/main/assets/xZenith-effect.png"
+              },
+              "footer": {
+                "text": "xZenith - Unleash Peak Performance",
+                "icon_url": "https://raw.githubusercontent.com/xFlawlessDev/xZenith-Releases/main/assets/xZenith-effect.png"
+              },
+              "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)"
+            }],
+            "components": [{
+              "type": 1,
+              "components": [
+                {
+                  "type": 2,
+                  "label": "Download Now",
+                  "style": 5,
+                  "url": "${{ steps.release.outputs.release_url }}",
+                  "emoji": {
+                    "name": "⬇️"
+                  }
+                },
+                {
+                  "type": 2,
+                  "label": "Join Discord",
+                  "style": 5,
+                  "url": "https://discord.gg/HKG9GNTesb",
+                  "emoji": {
+                    "name": "💬"
+                  }
+                }
+              ]
+            }]
+          }
+          EOF
+
+          # Send to Discord
+          curl -H "Content-Type: application/json" \
+               -d @payload.json \
+               "$DISCORD_WEBHOOK"
+
+          echo "✅ Discord notification sent successfully!"
