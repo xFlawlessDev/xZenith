@@ -52,7 +52,7 @@ jobs:
           # Create JSON payload using jq for proper escaping
           jq -n \
             --arg username "xZenith Releases" \
-            --arg avatar "https://raw.githubusercontent.com/xFlawlessDev/xZenith-Releases/main/assets/xZenith-effect.png" \
+            --arg avatar "https://raw.githubusercontent.com/xFlawlessDev/xZenith/main/assets/xZenith-effect.png" \
             --arg title "🚀 xZenith v$VERSION Released!" \
             --rawfile description description.txt \
             --arg url "$RELEASE_URL" \

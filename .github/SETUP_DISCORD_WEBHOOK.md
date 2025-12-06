@@ -34,7 +34,7 @@ This guide will help you set up Discord webhook integration for automatic releas
 
 1. **Navigate to Repository Settings**
 
-   - Go to: https://github.com/xFlawlessDev/xZenith-Releases/settings/secrets/actions
+   - Go to: https://github.com/xFlawlessDev/xZenith/settings/secrets/actions
 
 2. **Create New Secret**
    - Click `New repository secret`
@@ -48,7 +48,7 @@ This guide will help you set up Discord webhook integration for automatic releas
 
 ### Option A: Create a Test Release (Recommended)
 
-1. Go to: https://github.com/xFlawlessDev/xZenith-Releases/releases/new
+1. Go to: https://github.com/xFlawlessDev/xZenith/releases/new
 2. Create a test release:
 
    - **Tag**: `v1.1.1-test` (or any version)
@@ -115,7 +115,7 @@ When you publish a release, Discord will receive a rich embed notification with:
 
 1. **Check GitHub Actions**
 
-   - Go to: https://github.com/xFlawlessDev/xZenith-Releases/actions
+   - Go to: https://github.com/xFlawlessDev/xZenith/actions
    - Click on the latest workflow run
    - Check for errors in the logs
 

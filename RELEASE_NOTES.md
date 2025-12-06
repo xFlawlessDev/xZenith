@@ -127,7 +127,7 @@ Your feedback is valuable! Please join our [Discord Server](https://discord.gg/H
 
 ---
 
-**Full Changelog:** [v1.1.0](https://github.com/xFlawlessDev/xZenith-Releases/releases/tag/v1.1.0)
+**Full Changelog:** [v1.1.0](https://github.com/xFlawlessDev/xZenith/releases/tag/v1.1.0)
 
 ---
 

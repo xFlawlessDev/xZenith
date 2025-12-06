@@ -7,8 +7,8 @@
   
   A modern hardware monitoring and system optimization application for Windows.
 
-[![Release](https://img.shields.io/github/v/release/xFlawlessDev/xZenith-Releases?style=for-the-badge&logo=github&color=blue)](https://github.com/xFlawlessDev/xZenith-Releases/releases)
-[![Downloads](https://img.shields.io/github/downloads/xFlawlessDev/xZenith-Releases/total?style=for-the-badge&color=green)](https://github.com/xFlawlessDev/xZenith-Releases/releases)
+[![Release](https://img.shields.io/github/v/release/xFlawlessDev/xZenith?style=for-the-badge&logo=github&color=blue)](https://github.com/xFlawlessDev/xZenith/releases)
+[![Downloads](https://img.shields.io/github/downloads/xFlawlessDev/xZenith/total?style=for-the-badge&color=green)](https://github.com/xFlawlessDev/xZenith/releases)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/HKG9GNTesb)
 
   <br/>
@@ -132,7 +132,7 @@
 
 ### Latest Release
 
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=windows)](https://github.com/xFlawlessDev/xZenith-Releases/releases/latest)
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=windows)](https://github.com/xFlawlessDev/xZenith/releases/latest)
 
 | File                          | Description                  |
 | ----------------------------- | ---------------------------- |
@@ -164,7 +164,7 @@
 
 ### Quick Install
 
-1. Download the latest installer from [Releases](https://github.com/xFlawlessDev/xZenith-Releases/releases/latest)
+1. Download the latest installer from [Releases](https://github.com/xFlawlessDev/xZenith/releases/latest)
 2. Run `xZenith_x.x.x_x64-setup.exe`
 3. Follow the installation wizard
 4. Launch xZenith from Start Menu
