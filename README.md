@@ -29,9 +29,9 @@
 <tr>
 <td width="50%">
 
-🚀 **Lightning Fast**
+🚀 **Auto-Updates**
 
-> Native performance with minimal resource usage
+> Automatic update checking with secure signed releases
 
 🎨 **Beautiful UI**
 
@@ -39,7 +39,7 @@
 
 📊 **Real-time Monitoring**
 
-> Live hardware stats with continuous CSV logging and 56+ metrics
+> Live hardware stats with continuous CSV logging and 75+ metrics
 
 </td>
 <td width="50%">
@@ -119,8 +119,9 @@
 
 ### 🎮 Additional Features
 
+- **Auto-Update System** - Automatic update checking with secure signed updates and toast notifications
 - **Global Search Command (Ctrl+K)** - Quick navigation to any feature without using mouse
-- **Discord Rich Presence** - Show monitoring status on Discord
+- **Enhanced Discord Rich Presence** - Show your actual hardware (system model, CPU, GPU) on Discord
 - **On-Screen Display (OSD)** - Notifications for system events
 - **8 Color Themes** - xZenith, Midnight, Ocean, Forest, Sunset, Aurora, Rose, Cyber
 - **Dynamic Backgrounds** - Gradients, Shooting Stars, DarkVeil
@@ -202,8 +203,9 @@ xZenith requires admin access to:
 <summary><b>Discord RPC not working?</b></summary>
 
 - Ensure Discord is running
-- Enable Rich Presence in Settings
+- Enable Rich Presence in Settings > Discord Rich Presence
 - Restart both applications
+- Discord will show your system model, CPU, and GPU when enabled
 </details>
 
 <details>
@@ -214,10 +216,21 @@ No. xZenith runs entirely offline and does not collect or transmit any user data
 </details>
 
 <details>
+<summary><b>How do auto-updates work?</b></summary>
+
+- xZenith checks for updates automatically on startup (can be disabled in Settings)
+- You can manually check for updates from Settings > Application Status
+- Updates are cryptographically signed for security
+- You'll receive a toast notification about the update status
+- Updates can be toggled on/off in Settings
+</details>
+
+<details>
 <summary><b>xZenith Cast not working?</b></summary>
 
 - Ensure USB debugging is enabled on your Android device
 - Check that your device is properly connected
+- Make sure required dependencies are installed
 </details>
 
 <details>

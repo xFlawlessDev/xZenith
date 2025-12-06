@@ -1,14 +1,40 @@
 # Release Notes
 
-## v1.2.0 (2025-12-06)
+## v1.3.0 (2025-12-07)
 
 ### 🚀 New Features & Improvements
 
-This update brings significant enhancements to the monitoring system with always-on monitoring, continuous CSV logging, and comprehensive hardware data coverage.
+This update introduces auto-update functionality, enhanced user experience with toast notifications, centralized app configuration, and improved Discord Rich Presence integration.
 
 ---
 
 ### ✨ What's New
+
+#### Auto-Update System
+
+- **Automatic Update Checking** - App checks for updates automatically on startup (silent mode)
+- **Manual Update Check** - Check for updates anytime from Settings > Application Status
+- **Auto-Update Toggle** - Enable/disable automatic updates from Settings
+- **Toast Notifications** - Clean toast notifications for update status:
+  - Success toast when you're already on the latest version
+  - Error toast if update check fails
+  - Native dialog for available updates with release notes
+- **Signed Updates** - Secure update distribution with cryptographic signing
+- **Custom NSIS Installer** - Windows installer with xZenith branding:
+  - System compatibility check (Windows 10 1809+)
+  - Automatic dependency installation (VC++ Redistributable)
+  - WebView2 availability detection
+  - Graceful handling of running instances
+  - Registry and user data cleanup on uninstall
+  - Custom install/uninstall dialogs
+
+#### Discord Rich Presence Enhancements
+
+- **Enhanced Discord Rich Presence** - Now shows actual hardware in your Discord status:
+  - System model (e.g., "ASUS ROG Strix")
+  - CPU model (e.g., "Intel Core i9-14900K")
+  - GPU model (e.g., "NVIDIA RTX 4090")
+  - Smart truncation for long hardware names
 
 #### Enhanced Hardware Monitoring
 
@@ -68,7 +94,6 @@ This update brings significant enhancements to the monitoring system with always
 - Performance optimizations (HAGS, Ultimate Performance Plan)
 - Privacy enhancements (Telemetry, Core Isolation settings)
 - Network optimizations
-- Windows debloat options
 - Apply/Unapply with history tracking
 
 #### Additional Features
@@ -108,25 +133,6 @@ This update brings significant enhancements to the monitoring system with always
 
 ---
 
-### 🔧 Bug Fixes
-
-- Fixed GPU temperature readings for NVIDIA and AMD graphics cards
-- Fixed WiX MSI installer build errors
-- Resolved TypeScript type errors in monitoring component
-- Fixed Clippy warnings in hardware modules
-- Corrected sensor data extraction for comprehensive monitoring
-
----
-
-### 🔜 Coming Soon
-
-- Auto-update functionality
-- More system tweaks and optimizations
-- Localization support
-- Additional theme customization
-
----
-
 ### 🙏 Feedback
 
 Your feedback is valuable! Please join our [Discord Server](https://discord.gg/HKG9GNTesb) to:
@@ -138,7 +144,7 @@ Your feedback is valuable! Please join our [Discord Server](https://discord.gg/H
 
 ---
 
-**Full Changelog:** [v1.2.0](https://github.com/xFlawlessDev/xzenith/releases/tag/v1.2.0)
+**Full Changelog:** [v1.3.0](https://github.com/xFlawlessDev/xzenith/releases/tag/v1.3.0)
 
 ---
 
