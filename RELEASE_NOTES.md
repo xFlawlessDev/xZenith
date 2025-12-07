@@ -1,5 +1,37 @@
 # Release Notes
 
+## v1.3.2 (2025-12-07)
+
+### 🚀 New Features
+
+#### Auto-Start on Login
+- **Windows Startup Integration** - New setting to automatically launch xZenith when you log in to Windows
+- **Toggle Control** - Enable/disable auto-start from Settings > Settings Management
+- **Persistent Configuration** - Auto-start preference saved and applied on each app launch
+
+#### Enhanced Update System
+- **Download Progress Tracking** - Real-time progress bar showing download percentage during updates
+- **Reusable Update Dialog** - Centralized `UpdateDialog` component shared between loading screen and settings
+- **Better UX Feedback** - Clear visual indicators for:
+  - Download in progress with percentage
+  - Installation phase after download completes
+  - Disabled controls during update process
+- **Improved Error Handling** - Better error messages and state cleanup on update failures
+
+### 🐛 Bug Fixes
+
+#### Auto-Start Configuration
+- **Fixed Hardcoded Behavior** - Auto-start now properly respects user settings instead of always enabling
+- **Settings Synchronization** - Auto-start state correctly loads from settings store on app launch
+- **Clean Imports** - Removed unused `MacosLauncher` imports (Windows-only app)
+
+#### Update System Improvements
+- **Type Safety** - Fixed TypeScript errors with Tauri's `DownloadEvent` types
+- **Accurate Progress** - Download progress now tracks cumulative bytes instead of individual chunks
+- **Event Handling** - Proper handling of Started, Progress, and Finished download events
+
+---
+
 ## v1.3.1 (2025-12-07)
 
 ### 🐛 Bug Fixes
@@ -171,7 +203,7 @@ Your feedback is valuable! Please join our [Discord Server](https://discord.gg/H
 
 ---
 
-**Full Changelog:** [v1.3.1](https://github.com/xFlawlessDev/xzenith/releases/tag/v1.3.1)
+**Full Changelog:** [v1.3.0](https://github.com/xFlawlessDev/xzenith/releases/tag/v1.3.0)
 
 ---
 
