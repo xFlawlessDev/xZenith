@@ -7,8 +7,8 @@
   
   A modern hardware monitoring and system optimization application for Windows.
 
-[![Release](https://img.shields.io/github/v/release/xFlawlessDev/xZenith?style=for-the-badge&logo=github&color=blue)](https://github.com/xFlawlessDev/xZenith/releases)
-[![Downloads](https://img.shields.io/github/downloads/xFlawlessDev/xZenith/total?style=for-the-badge&color=green)](https://github.com/xFlawlessDev/xZenith/releases)
+[![Release](https://img.shields.io/github/v/release/xFlawlessDev/xzenith?style=for-the-badge&logo=github&color=blue)](https://github.com/xFlawlessDev/xzenith/releases)
+[![Downloads](https://img.shields.io/github/downloads/xFlawlessDev/xzenith/total?style=for-the-badge&color=green)](https://github.com/xFlawlessDev/xzenith/releases)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/HKG9GNTesb)
 
   <br/>
@@ -29,9 +29,9 @@
 <tr>
 <td width="50%">
 
-🚀 **Auto-Updates**
+🚀 **Lightning Fast**
 
-> Automatic update checking with secure signed releases
+> Native performance with minimal resource usage
 
 🎨 **Beautiful UI**
 
@@ -39,7 +39,7 @@
 
 📊 **Real-time Monitoring**
 
-> Live hardware stats with continuous CSV logging and 75+ metrics
+> Live hardware stats with continuous CSV logging and 35+ metrics
 
 </td>
 <td width="50%">
@@ -66,7 +66,7 @@
 
 <div align="center">
   <img src="./screenshots/xZenith-photo-collage.jpg" alt="Collage" width="90%"/>
-  <p><em>Application overview</em></p>
+  <p><em>Dashboard - Real-time system overview</em></p>
   
   <img src="./screenshots/Monitoring-Top.png" alt="Monitoring" width="90%"/>
   <p><em>Hardware Monitoring - Detailed temperature and usage graphs</em></p>
@@ -82,17 +82,22 @@
 ### 📊 Dashboard & Monitoring
 
 - **Real-time Dashboard** - System overview with CPU, GPU, RAM, Battery, and Storage stats
+- **Component-Based Monitoring** - Modular architecture with dedicated sections for each hardware type
 - **Always-On Monitoring** - Automatic monitoring starts when opening the page
-- **Continuous CSV Logging** - Start/Stop logging toggle for real-time data recording
-- **Comprehensive Data Export** - CSV logs include 75+ hardware metrics:
-  - CPU: Temperature (main, package, avg, max), Power (package, avg, max, Intel breakdown), Voltage (core, SoC), Load, Frequency, Bus Speed
-  - GPU: Temperature (core, hotspot, memory, junction), Power (current, max, PPT, SoC, core), Voltage (core, SoC, memory), Load, Clock, Memory usage, Fan metrics
-  - Motherboard: Temperatures (system, VRM, CPU, PCH), Voltages (Vcore, +3.3V, +5V, +12V)
-  - Network: Speed, Utilization, Total transferred data
-  - Storage: Temperature, Read/Write speeds, Total read/written data
-- **Enhanced CPU Data** - Intel power breakdown (cores, graphics, memory, platform), voltage tracking, bus speed
-- **Enhanced GPU Data** - Memory temperature, junction temperature, AMD power breakdown (PPT, SoC, Core)
-- **Multi-sensor support** - Intel, AMD, and NVIDIA hardware detection
+- **Continuous CSV Logging** - Start/Stop logging toggle with 35+ metrics:
+  - CPU: Temperature, Power, Load
+  - GPU: Temperature, Hotspot Temp, Power, Core Load, Clocks, Memory Used
+  - RAM: Usage %, Used (GB), Available (GB)
+  - Network: Download/Upload Speed, Total Data Transferred (GB)
+  - Storage: Temperature, Read/Write/Total Activity, Throughput, Used %
+  - Motherboard: System Temp, VRM Temp
+  - Battery: Charge Level, Voltage, Charge/Discharge Rate
+- **RAM Monitoring** - Physical/virtual memory stats with DIMM SPD timing data (tAA, tRCD, tRP, tRAS)
+- **Battery Monitoring** - Charge level, voltage, power rates, capacity, and remaining time
+- **Enhanced Storage** - SMART data, health metrics, lifetime statistics with TB tooltips
+- **Hardware Support** - Intel, AMD, NVIDIA GPUs with Intel Arc discrete GPU support
+- **AMD Ryzen Support** - CCD temperature sensors (CCD1-8), effective clocks
+- **Unsupported Hardware Indicators** - Tooltips for zero-value sensors
 - **Customizable intervals** - Update rates from 0.5s to 5s
 - **Min/Max/Current tracking** - Historical value tracking with complete history
 
@@ -120,9 +125,8 @@
 
 ### 🎮 Additional Features
 
-- **Auto-Update System** - Automatic update checking with secure signed updates and toast notifications
 - **Global Search Command (Ctrl+K)** - Quick navigation to any feature without using mouse
-- **Enhanced Discord Rich Presence** - Show your actual hardware (system model, CPU, GPU) on Discord
+- **Discord Rich Presence** - Show monitoring status on Discord
 - **On-Screen Display (OSD)** - Notifications for system events
 - **8 Color Themes** - xZenith, Midnight, Ocean, Forest, Sunset, Aurora, Rose, Cyber
 - **Dynamic Backgrounds** - Gradients, Shooting Stars, DarkVeil
@@ -134,7 +138,7 @@
 
 ### Latest Release
 
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=windows)](https://github.com/xFlawlessDev/xZenith/releases/latest)
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=windows)](https://github.com/xFlawlessDev/xzenith/releases/latest)
 
 | File                          | Description                  |
 | ----------------------------- | ---------------------------- |
@@ -166,7 +170,7 @@
 
 ### Quick Install
 
-1. Download the latest installer from [Releases](https://github.com/xFlawlessDev/xZenith/releases/latest)
+1. Download the latest installer from [Releases](https://github.com/xFlawlessDev/xzenith/releases/latest)
 2. Run `xZenith_x.x.x_x64-setup.exe`
 3. Follow the installation wizard
 4. Launch xZenith from Start Menu
@@ -204,9 +208,8 @@ xZenith requires admin access to:
 <summary><b>Discord RPC not working?</b></summary>
 
 - Ensure Discord is running
-- Enable Rich Presence in Settings > Discord Rich Presence
+- Enable Rich Presence in Settings
 - Restart both applications
-- Discord will show your system model, CPU, and GPU when enabled
 </details>
 
 <details>
@@ -217,21 +220,10 @@ No. xZenith runs entirely offline and does not collect or transmit any user data
 </details>
 
 <details>
-<summary><b>How do auto-updates work?</b></summary>
-
-- xZenith checks for updates automatically on startup (can be disabled in Settings)
-- You can manually check for updates from Settings > Application Status
-- Updates are cryptographically signed for security
-- You'll receive a toast notification about the update status
-- Updates can be toggled on/off in Settings
-</details>
-
-<details>
 <summary><b>xZenith Cast not working?</b></summary>
 
 - Ensure USB debugging is enabled on your Android device
 - Check that your device is properly connected
-- Make sure required dependencies are installed
 </details>
 
 <details>
@@ -262,8 +254,8 @@ When reporting bugs, please include:
 - [Vue.js](https://vuejs.org/) - Reactive UI framework
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
 - [shadcn-vue](https://www.shadcn-vue.com/) - UI components
-- [xZenithHardwareMonitor](https://github.com/xFlawlessDev/xZenithHardwareMonitor) - Hardware monitoring library
-- [LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) - Core hardware monitoring
+- [LibreHardwareMonitor](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor) - Hardware monitoring library
+- [PawnIO](https://github.com/Starter12345/PawnIO) - Kernel driver for hardware access (replaced WinRing0)
 - [scrcpy](https://github.com/Genymobile/scrcpy) - Android screen mirroring (xZenith Cast)
 - [Lucide](https://lucide.dev/) & [Iconify](https://iconify.design/) - Icons
 
